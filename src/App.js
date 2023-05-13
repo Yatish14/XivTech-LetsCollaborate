@@ -17,11 +17,11 @@ function App() {
     <Router>
       <div className="App">
         <Routes>
-          <Route path = "/" element = {<LetsCollaborate />}></Route>
-          <Route path = "/rpa" element = {<AIandRPA />}></Route>
-          <Route path = "/choice" element = {<BolderChoice />}></Route>
-          <Route path = "/innovate" element = {<InnovateSpeed />}></Route>
-          <Route path = "/cloud" element = {<EmbraceCloud />}></Route>
+          <Route path = "/XivTech-LetsCollaborate" element = {<LetsCollaborate />}></Route>
+          <Route path = "/XivTech-LetsCollaborate/rpa" element = {<AIandRPA />}></Route>
+          <Route path = "/XivTech-LetsCollaborate/choice" element = {<BolderChoice />}></Route>
+          <Route path = "/XivTech-LetsCollaborate/innovate" element = {<InnovateSpeed />}></Route>
+          <Route path = "/XivTech-LetsCollaborate/cloud" element = {<EmbraceCloud />}></Route>
         </Routes>
       </div>
     </Router>
