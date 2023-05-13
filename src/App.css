@@ -378,4 +378,14 @@ a
     {
         padding: 10px 0px 0px 0px;
     }
+    .cards
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .gridcont
+    {
+        display: flex;
+        flex-direction: column;
+    }
 }
