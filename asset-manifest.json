@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/XivTech-LetsCollaborate/static/css/main.f88436bb.css",
-    "main.js": "/XivTech-LetsCollaborate/static/js/main.dc433eb9.js",
+    "main.css": "/XivTech-LetsCollaborate/static/css/main.0c9ecd8f.css",
+    "main.js": "/XivTech-LetsCollaborate/static/js/main.04807c74.js",
     "static/media/rp5.png": "/XivTech-LetsCollaborate/static/media/rp5.9f4d1e2ca5fb75be38d9.png",
     "static/media/main-service1.jpeg": "/XivTech-LetsCollaborate/static/media/main-service1.ef086f1fe3df26654725.jpeg",
     "static/media/m1.webp": "/XivTech-LetsCollaborate/static/media/m1.c8d5b29c7abbd4b84d71.webp",
     "static/media/download.png": "/XivTech-LetsCollaborate/static/media/download.1a7c66dd0583d0a82602.png",
     "index.html": "/XivTech-LetsCollaborate/index.html",
-    "main.f88436bb.css.map": "/XivTech-LetsCollaborate/static/css/main.f88436bb.css.map",
-    "main.dc433eb9.js.map": "/XivTech-LetsCollaborate/static/js/main.dc433eb9.js.map"
+    "main.0c9ecd8f.css.map": "/XivTech-LetsCollaborate/static/css/main.0c9ecd8f.css.map",
+    "main.04807c74.js.map": "/XivTech-LetsCollaborate/static/js/main.04807c74.js.map"
   },
   "entrypoints": [
-    "static/css/main.f88436bb.css",
-    "static/js/main.dc433eb9.js"
+    "static/css/main.0c9ecd8f.css",
+    "static/js/main.04807c74.js"
   ]
 }
