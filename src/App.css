@@ -1,38 +1,307 @@
-.App {
-  text-align: center;
+*
+{
+    margin: 0;
+    padding: 0;
+}
+h2
+{
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 375%;
+}
+h3
+{
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 1.75rem;
+}
+.rpa,.choices,.innovate,.cloud
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.text
+{
+    padding-right: 10%;
+    margin-left: 20%;
+    text-align: left;
+    /* margin-top: 3%; */
+    margin-bottom: 3%;
+}
+.text p
+{
+    font-size: large;
+}
+.text img
+{
+    vertical-align: middle;
+    margin-left: 20px;
+}
+.link_p:hover img
+{
+    vertical-align: middle;
+    margin-left: 20px;
+    animation: slideLeft 0.3s ease;
+}
+.text p:hover
+{
+    color: rgba(0, 0, 0, 0.6);
+}
+.image
+{
+    margin-right: 20%;
+    margin-left: 3%;
+    /* margin-top: 3%; */
+    margin-bottom: 3%;
+}
+.image img
+{
+    width: 400px;
+    height: 350px;
+    object-fit: cover;
+    vertical-align: middle;
+}
+a
+{
+    text-decoration: none ;
+    color: inherit ;
+}
+.bds p
+{
+    padding: 2% 2%;
+}
+.aiandrpa 
+{
+    background-image : url("../public/images/download.png");
+    text-align: center;
+    background-size: cover;
+    background-position: center center;
+    top: 100px;
+    left: 0px;
+    width: 100%;
+    height: 400px;
+    background-attachment: fixed;
+    color: white;
+    padding-top: 3%;
+}
+.mainservice
+{
+    background-image : url("../public/images/main-service1.jpeg");
+}
+.m1
+{
+    background-image : url("../public/images/m1.webp");
+}
+.aiandrpa h2
+{
+    margin-bottom: 1%;
+}
+.aiandrpa p
+{
+    font-size: large;
+}
+.content
+{
+    width: 100%;
+    height: 700px;
+    position: relative;
+    background-color: white;
+    left: 0px;
+    text-align: center;
+    padding-top: 4%;
+}
+.wrapper
+{
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    padding-bottom: 2%;
+}
+.wrapper h3
+{
+    font-weight: 700;
+    font-size: xx-large;
+}
+.wrapper .process
+{
+    padding: 0px 40px 0px 0px;
+}
+.wrapper .automation
+{
+    padding: 0px 40px;
+    border-left: 3px solid;
+    border-right: 3px solid;
+    border-image: linear-gradient(180deg,#e709b0 0,#6709e2) 1 100%;
+}
+.wrapper .monetization
+{
+    padding: 0px 0px 0px 40px;
+}
+.ourteam
+{
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1.2rem;
+    padding: 2% 10%;
+    font-size: large;
+    text-align: center;
+}
+.btn
+{
+    font-size: 1rem;
+    height: 3.625rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid transparent;
+    text-decoration: none;
+    background-color: #000;
+    padding: 0 3rem;
+    border-radius: 2px;
+    font-weight: 500;
+    transition: all .25s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    font-family: "Avenir Next",Arial,sans-serif;
+    cursor: pointer;
+    color: #fff;
+    margin-top: 2rem;
+    overflow: hidden;
+    text-align: 0.8s;
+}
+.btn:hover
+{
+    border: 2px solid black;
+    color: black;
+    background-color: white;
+}
+.capability
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 10%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.capability h3
+{
+    margin-bottom: 10%;
+    font-size: bold;
+    font-weight: 600;
+}
+.cards
+{
+    display: flex;
+}
+.btnchoice
+{
+    display: flex;
+    flex-direction: column;
+}
+.btnchoice .btn
+{
+    margin: 5% 0 10% 20%;
+}
+@keyframes slideLeft
+{
+    0%
+    {
+        transform: translate(10px);
+        opacity: 0
+    }
+    25%
+    {
+        transform: translate(7.5px);
+        opacity: 0.25
+    }
+    50%
+    {
+        transform: translate(5px);
+        opacity: 0.5
+    }
+    75%
+    {
+        transform: translate(2.5px);
+        opacity: 0.75
+    }
+    100%
+    {
+        transform: translate(0px);
+        opacity: 1
+    }
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media screen and (max-width: 765px) {
+    .rpa,.choices,.innovate,.cloud
+    {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .text
+    {
+        margin: 0 0 3% 3%;
+    }
+    .text p
+    {
+        font-size: 15px;
+    }
+    .text h2
+    {
+        font-size: 40px;
+        margin-bottom: 3%;
+    }
+    .image
+    {
+        margin-bottom: 30px;
+        width: 100%;
+        height: 100%;
+        vertical-align: middle;
+    }
+    .btnchoice .btn
+    {
+        margin: 0;
+        margin-top: 3%;
+        margin-left: 3%;
+        margin-bottom: 3%;
+    }
+    h2
+    {
+        font-style: normal;
+        font-weight: lighter;
+        font-size: 30px;
+    }
+    h3
+    {
+        font-style: normal;
+        font-weight: lighter;
+        font-size: 1rem;
+    }
+    .wrapper
+    {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .wrapper .process
+    {
+        padding: 0px 0px 10px 0px;
+    }
+    .wrapper .automation
+    {
+        padding: 10px 0px;
+        border-top-style: solid;
+        border-bottom-style: solid;
+        border-left-style: none;
+        border-right-style: none;
+        border-image: linear-gradient(180deg,#e709b0 0,#6709e2) 1 100%;
+        border-image-slice: 1;
+    }
+    .wrapper .monetization
+    {
+        padding: 10px 0px 0px 0px;
+    }
 }
