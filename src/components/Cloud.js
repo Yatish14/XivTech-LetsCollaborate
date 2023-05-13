@@ -1,17 +1,24 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import Modal from 'react-modal';
+import { AiOutlineClose } from 'react-icons/ai';
+import "../App.css"
 
 class Cloud extends React.Component {
-  state = {
-    modalOpen: false
-  };
-  toggleModal = () => {
+  constructor(props) {
+    super(props);
+    this.state = {
+      showModal: false
+    };
+    this.toggleModal = this.toggleModal.bind(this);
+  }
+
+  toggleModal() {
     this.setState(prevState => ({
-      modalOpen: !prevState.modalOpen
+      showModal: !prevState.showModal
     }));
-  };
-  
+  }
+
   render() {
     return (
       <div className='btnchoice'>
@@ -31,17 +38,61 @@ class Cloud extends React.Component {
               Get in Touch
         </button>
       </div>
-      <Modal isOpen={this.state.modalOpen} toggle={this.toggleModal}>
-        <ModalHeader toggle={this.toggleModal}>Contact Us</ModalHeader>
-        <ModalBody>
-          <p>Fill out the form below to get in touch with us:</p>
-          {/* Add your form components here */}
-        </ModalBody>
-        <ModalFooter>
-          <button className='btn btn-primary' onClick={this.toggleModal}>Submit</button>{' '}
-          <button className='btn btn-secondary' onClick={this.toggleModal}>Cancel</button>
-        </ModalFooter>
-      </Modal>
+      {this.state.showModal ? (
+          <div className="modal">
+            <div className="modal-header">
+              <h3>Contact Us</h3>
+              <button onClick={this.toggleModal}>X</button>
+            </div>
+            <div className="modal-body">
+              <form>
+                <label>
+                  First Name:<br />
+                  <input type="text" name="name" />
+                </label>
+                {/* <br /> */}
+                <label>
+                  Last Name:<br />
+                  <input type="text" name="name" />
+                </label>
+                {/* <br/> */}
+                <label>
+                  Bussiness Phone:<br />
+                  <input type='text' name="phone" />
+                </label>
+                {/* <br /> */}
+                <label>
+                  Work Email:<br />
+                  <input type='email' name="email" />
+                </label>
+                {/* <br /> */}
+                <label>
+                  Organization:<br />
+                  <input type='text' name="org" />
+                </label>
+                {/* <br /> */}
+                <label>
+                  Job Role:<br />
+                  <input type='text' name="role" />
+                </label>
+                {/* <br /> */}
+                <label>
+                  Country:<br />
+                  <input type='text' name="text" />
+                </label>
+                {/* <br /> */}
+                <label>
+                  Message:<br />
+                  <input type='text' name="message" />
+                </label>
+                {/* <br /> */}
+              </form>
+            </div>
+            <div className="modal-footer">
+              <button onClick={this.toggleModal}>Submit</button>
+            </div>
+          </div>
+        ) : null}
       </div>
     );
   }
