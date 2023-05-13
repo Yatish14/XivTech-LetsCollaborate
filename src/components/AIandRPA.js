@@ -3,7 +3,7 @@ import "../App.css"
 import { Link } from "react-router-dom";
 import Card from 'react-bootstrap/Card';
 
-class Rpa extends React.Component {
+class AIandRPA extends React.Component {
   render() {
     return (
         <div>
@@ -30,21 +30,23 @@ class Rpa extends React.Component {
               <div>
                 <h3>Capabilities</h3>
               </div>
-              <Card style={{ width: '300px',border: "2px solid lightgray",cursor: "pointer",marginBottom : "10%"}}>
-                <Card.Img variant="top" src="https://www.xivtech.io./rp4.jpg" style = {{width : 300}}/>
-                <Card.Body>
-                  {/* <Card.Title>Card Title</Card.Title> */}
-                  <br></br>
-                  <Card.Text>
-                    <Link style={{color: "blue"}}>Bot Automation Simplified</Link>
+              <Link to ="/XivTech-LetsCollaborate/link1">
+                <Card style={{ width: '300px',border: "2px solid lightgray",cursor: "pointer",marginBottom : "10%"}}>
+                  <Card.Img variant="top" src="https://www.xivtech.io./rp4.jpg" style = {{width : 300}}/>
+                  <Card.Body>
+                    {/* <Card.Title>Card Title</Card.Title> */}
                     <br></br>
+                    <Card.Text>
+                      <Link style={{color: "blue"}}>Bot Automation Simplified</Link>
+                      <br></br>
+                      <br></br>
+                      <Link style={{color: "blue"}}>Build, Deploy and Scale Bots</Link>
+                      <br></br>
+                    </Card.Text>
                     <br></br>
-                    <Link style={{color: "blue"}}>Build, Deploy and Scale Bots</Link>
-                    <br></br>
-                  </Card.Text>
-                  <br></br>
-                </Card.Body>
-              </Card>
+                  </Card.Body>
+                </Card>
+              </Link>
             </div>
             </div>
         </div>
@@ -52,4 +54,4 @@ class Rpa extends React.Component {
   }
 }
 
-export default Rpa;
+export default AIandRPA;

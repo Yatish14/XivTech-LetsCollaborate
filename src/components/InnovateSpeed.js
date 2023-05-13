@@ -3,7 +3,7 @@ import "../App.css"
 import { Link } from "react-router-dom";
 import Card from 'react-bootstrap/Card';
 
-class Rpa extends React.Component {
+class InnovateSpeed extends React.Component {
   render() {
     return (
         <div>
@@ -28,6 +28,7 @@ class Rpa extends React.Component {
               <div>
                 <h3>Capabilities</h3>
               </div>
+              <Link to = "/XivTech-LetsCollaborate/link3">
                 <Card style={{ width: '300px',border: "2px solid lightgray",cursor: "pointer",marginBottom : "10%"}}>
                   <Card.Img variant="top" src="https://www.xivtech.io./tile1.png" style = {{width : 300}}/>
                   <Card.Body>
@@ -43,6 +44,7 @@ class Rpa extends React.Component {
                     <br></br>
                   </Card.Body>
                 </Card>
+                </Link>
             </div>
             </div>
         </div>
@@ -50,4 +52,4 @@ class Rpa extends React.Component {
   }
 }
 
-export default Rpa;
+export default InnovateSpeed;
