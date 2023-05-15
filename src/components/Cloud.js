@@ -1,7 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Modal from 'react-modal';
-import { AiOutlineClose } from 'react-icons/ai';
 import "../App.css"
 
 class Cloud extends React.Component {
