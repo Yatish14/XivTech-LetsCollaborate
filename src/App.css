@@ -8,12 +8,14 @@ h2
     font-style: normal;
     font-weight: lighter;
     font-size: 375%;
+    padding-bottom: 3%;
 }
 h3
 {
     font-style: normal;
     font-weight: lighter;
     font-size: 1.75rem;
+    padding-top: 5%;
 }
 .rpa,.choices,.innovate,.cloud
 {
